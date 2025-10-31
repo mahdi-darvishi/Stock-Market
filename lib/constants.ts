@@ -96,7 +96,7 @@ export const MARKET_OVERVIEW_WIDGET_CONFIG = {
 };
 
 export const HEATMAP_WIDGET_CONFIG = {
-  dataSource: "SPX500",
+  dataSource: "S&P 500",
   blockSize: "market_cap_basic",
   blockColor: "change",
   grouping: "sector",
