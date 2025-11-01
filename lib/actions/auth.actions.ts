@@ -46,7 +46,16 @@ export const signInWithEmail = async ({ email, password }: SignInFormData) => {
     return { success: true, data: response };
   } catch (e) {
     console.log("Sign in failed", e);
-    return { success: false, error: "Sign in failed" };
+    let errorMessage = "Sign in failed. Please try again later."; // Default error message
+
+    // Check if the error is related to invalid email or password
+    if (e instanceof Error) {
+      if (e.message.includes("Invalid email or password")) {
+        errorMessage = "Invalid email or password.";
+      }
+    }
+
+    return { success: false, error: errorMessage };
   }
 };
 export const signOut = async () => {
