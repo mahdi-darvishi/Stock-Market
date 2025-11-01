@@ -215,6 +215,17 @@ declare global {
     threshold: number;
     changePercent?: number;
   };
+
+  interface UserForNewsEmail {
+    email: string;
+    name: string;
+  }
+
+  interface MarketNewsArticle {
+    headline: string;
+    summary: string;
+    url: string;
+  }
 }
 
 export {};

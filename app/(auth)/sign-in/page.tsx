@@ -28,6 +28,7 @@ const SignIn = () => {
 
       if (result.success) {
         router.push("/");
+        toast.success("Sign in successful");
         return;
       }
 
