@@ -4,7 +4,7 @@ A real-time application for monitoring cryptocurrency prices, featuring user aut
 
 ## 🚀 Live Demo
 
-**[https://your-live-demo-link.com/](https://stock-market-beryl.vercel.app/)**
+**live demo(https://stock-market-beryl.vercel.app/)**
 
 *(Note: This is a placeholder link and should be replaced with your final deployment URL.)*
 
